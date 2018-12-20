@@ -17,7 +17,7 @@
         </ul>
         <hr *ngIf="selectedItems.length > 0 && availableItems.length > 0" />
         <ul class="available-items">
-            <li #availableOption *ngFor="let item of availableItems| filterBy: searchText | limitTo : config.limitTo;let i = index" tabindex="-1"
+            <li #availableOption *ngFor="let item of availableItems| filterBy: searchText:config.keyName | limitTo : config.limitTo;let i = index" tabindex="-1"
                 [ngClass]="{'active': focusedItemIndex == i}" (click)="selectItem(item,i)">
                 {{item[config.displayKey] || item}}</li>
             <li *ngIf="showNotFound">{{config.noResultsFound}}</li>
