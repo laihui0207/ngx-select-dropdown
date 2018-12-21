@@ -82,6 +82,7 @@ config = {
         moreText: 'more' // text to be displayed whenmore than one items are selected like Option 1 + 5 more
         noResultsFound: 'No results found!' // text to be displayed when no items are found while searching
         searchPlaceholder:'Search' // label thats displayed in search input
+        keyName: 'id'  // search key name
       }
 ````
 
